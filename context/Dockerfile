@@ -7,7 +7,7 @@ RUN mkdir -p /usr/share/man/man1 && mkdir -p /usr/share/man/man7
 RUN apt-get update && \
   apt-get install -y --no-install-recommends \
     curl ca-certificates build-essential postgresql-client \
-    postgresql-autodoc git && \
+    postgresql-autodoc git graphviz && \
   rm -rf /var/lib/apt/lists/*
 
 # install cpanm and pg_prove
